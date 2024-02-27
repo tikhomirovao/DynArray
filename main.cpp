@@ -1,13 +1,13 @@
-#include <iostream>
+п»ї#include <iostream>
 #include "DynArray.h"
 
 using namespace std;
 
-//функция создания и заполнение массива случайными числами
+//С„СѓРЅРєС†РёСЏ СЃРѕР·РґР°РЅРёСЏ Рё Р·Р°РїРѕР»РЅРµРЅРёРµ РјР°СЃСЃРёРІР° СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё
 DynArray CreateArray(size_t Size)
 {
-	DynArray TMP(Size); //создает локальный lvalue объект функции, указанного размера
-	TMP.Randomize(-99, 99); //заполняет объект случайными числами от -99 до 99 включительно
+	DynArray TMP(Size); //СЃРѕР·РґР°РµС‚ Р»РѕРєР°Р»СЊРЅС‹Р№ lvalue РѕР±СЉРµРєС‚ С„СѓРЅРєС†РёРё, СѓРєР°Р·Р°РЅРЅРѕРіРѕ СЂР°Р·РјРµСЂР°
+	TMP.Randomize(-99, 99); //Р·Р°РїРѕР»РЅСЏРµС‚ РѕР±СЉРµРєС‚ СЃР»СѓС‡Р°Р№РЅС‹РјРё С‡РёСЃР»Р°РјРё РѕС‚ -99 РґРѕ 99 РІРєР»СЋС‡РёС‚РµР»СЊРЅРѕ
 	return TMP;
 }
 
@@ -17,7 +17,7 @@ int main()
 	SetConsoleOutputCP(1251);
 	srand((unsigned int)time(nullptr));
 
-	DynArray *Array = new DynArray(20U); //конструктор с параметрами
+	DynArray *Array = new DynArray(20U); //РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ СЃ РїР°СЂР°РјРµС‚СЂР°РјРё
 
 	cout << *Array << endl;
 
